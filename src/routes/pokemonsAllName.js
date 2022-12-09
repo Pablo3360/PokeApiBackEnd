@@ -26,8 +26,6 @@ router.get('/pokemons', async(req, res)=>{
             ]
         });
 
-        console.log(pokemonRequest);
-
         if(pokemonRequest){
             res.status(200).send(pokemonRequest)
         } else {
